@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurva Namdev | Personalized portfolio</title>
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style-home.css">
+
+    <!-- gfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- menu  -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="items-" href="#title">Home</a>
+        <a class="items-" href="#about">About</a>
+        <a class="items-" href="#skill-section">Skills</a>
+        <a class="items-" href="#">Projects</a>
+        <a class="items-" href="#contact">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span class="menu-div" onclick="openNav()"><img src="https://img.icons8.com/material-sharp/24/000000/menu--v2.png" width="30px" alt="Menu"></span>
+
+    <!-- title section -->
+    <section id="title">
+        <div class="title-box">
+            <div>
+                <img class="my-image m-auto" src="images/girl.jpg" alt="">
+            </div>
+            <h1 class="intro-heading">Hi, I'm Apurva.</h1>
+            <p class="intro-holder">I like to
+                <span id="intro"></span> & lots more.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!-- ********************************* -->
+
+
+    <!-- about section -->
+    <section id="about">
+
+        <div class="about-box">
+
+            <h1 class="about-heading" id="about-Heading">About me</h1>
+            <p class="about-para" id="about-Para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum quasi amet magnam fugit illum quas a repellendus ad! Laborum iste dignissimos assumenda officia. Eum suscipit tempore eos sequi nihil. Voluptate architecto deserunt
+                ducimus vel eius maxime ipsa facilis voluptatibus suscipit esse sed error beatae impedit vitae quae voluptatum hic, culpa fugit nesciunt, quis facere. Perferendis alias modi tempore tenetur.</p>
+
+        </div>
+        <div class="about-box-img">
+            <img class="about-img" src="images/Wavy_Bus-15_Single-01.jpg" alt="">
+        </div>
+
+    </section>
+
+
+
+
+    <!-- skills section -->
+    <section id="skill-section">
+
+        <div class="row skill-row">
+
+            <!-- --------------------- -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="skill-heading">Web Developement Skills</h2>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/html.png" alt="html-img"></div>
+                            <div class="skill" id="skillname">HTML5</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/css.png" alt="css-img"></div>
+                            <div class="skill" id="skillname">CSS3</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/js-format.png" alt="js-img"></div>
+                            <div class="skill" id="skillname">JS</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/bootstrap.svg" alt="Bootstrap-img"></div>
+                            <div class="skill" id="skillname">Bootstrap5</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="skill-heading"> Programming Skills</h2>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/c.png" alt="c-img"></div>
+                            <div class="skill" id="skillname">c </div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/c-.png" alt="cpp-img"></div>
+                            <div class="skill" id="skillname"> c++</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/java.png" alt="java-img"></div>
+                            <div class="skill" id="skillname">JAVA</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="skill-heading"> Other Skills</h2>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/icons8-git-50.png" alt="-img"></div>
+                            <div class="skill" id="skillname">Git </div>
+                            <div class="skill" id="skillbar"> ⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/icons8-github-24.png" alt="-img"></div>
+                            <div class="skill" id="skillname">Github </div>
+                            <div class="skill" id="skillbar"> ⭐⭐ </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill"><img id="logo" src="images/icons8-mysql-logo-48.png" alt="-img"></div>
+                            <div class="skill" id="skillname">MySQL</div>
+                            <div class="skill" id="skillbar"> ⭐⭐⭐ </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- ---------------------- -->
+        </div>
+    </section>
+
+    <!-- contact me section -->
+    <section id="contact">
+
+        <div class="contact-box">
+
+            <h1 class="contact-heading">Get In Touch</h1>
+            <p id="contact-lines"></p>
+
+            <button class="btn btn-lg btn-outline-dark"><a href="mailto:Apurv.official.tech@gmail.com"> Contact Me</a></button>
+
+        </div>
+    </section>
+
+    <!-- attributions  section -->
+    <section class="btn-primary">
+        <div id="credits" class="container">Credits & Attributions
+            <div id="attributions">
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div><a href="https://icons8.com/icon/hPaWuorwGA0w/menu">Menu icon by Icons8</a></div>
+                <div>
+                    <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by vectorjuice -
+                        www.freepik.com</a>
+                </div>
+                <div>
+                    <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>
+                </div>
+                <div>
+                    <a href="https://icons8.com/icon/38389/git">Git icon by Icons8</a>
+                </div>
+                <div>
+                    <a href="https://icons8.com/icon/106562/github">GitHub icon by Icons8</a>
+                </div>
+                <div>
+                    <a href="https://icons8.com/icon/9nLaR5KFGjN0/mysql-logo">MySQL Logo icon by Icons8</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footbar">
+
+            <button type="button" class="btn-sm btn-outline-primary"><a href="#"><i class="fa fa-github"></i></a></button>
+            <button type="button" class="btn-sm btn-outline-primary"><a href="#"><i class="fa fa-youtube"></i></a></button>
+            <button type="button" class="btn-sm btn-outline-primary"><a href="#"><i class="fa fa-linkedin"></i></a></button>
+            <p>All Rights Reserved</p>
+            <p>&copy; 2021 by Apurva </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#credits").click(function() {
+                $("#attributions").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "80vw";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    attribution
+
+    <a href='https://www.freepik.com/vectors/coffee'>Coffee vector created by pch.vector - www.freepik.com</a>
+
+
+    <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by vectorjuice - www.freepik.com</a>
+ 
+<a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>
+
+
+-->

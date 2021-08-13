@@ -1,0 +1,458 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid rgb(138, 120, 120); */
+    text-align: center;
+    max-width: 100%;
+}
+
+body {
+    /* padding: 2%; */
+    font-family: 'Helvetica', sans-serif;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ************************************************************ */
+
+.menu-div {
+    display: inline-block;
+    width: 5vw;
+    position: absolute;
+    z-index: 1;
+    top: 3vh;
+    left: 3vw;
+    filter: invert(100);
+}
+
+
+/* menu */
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.items-:hover {
+    border: 2px solid white;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* responsive sidebar */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* section title */
+
+#title {
+    background-color: #7619f0;
+    color: whitesmoke;
+    box-shadow: 0px 1px 2px 3px black;
+}
+
+.title-box {
+    padding-top: 8%;
+}
+
+.my-image {
+    height: 6em;
+    width: 6em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.580);
+}
+
+.intro-heading {
+    margin-top: 2.5%;
+}
+
+
+/* introduction animation */
+
+#intro {
+    width: 20px;
+    height: 22px;
+    color: WHITE;
+    display: inline;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.904);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#intro::after {
+    content: "";
+    animation: animate 5s linear 1s infinite;
+}
+
+.intro-holder {
+    font-size: 2em;
+    height: 18px;
+    margin: 1% auto 15%;
+    color: rgba(0, 0, 0, 0.904);
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes animate {
+    0% {
+        content: "Code";
+    }
+    20% {
+        content: "Design";
+    }
+    40% {
+        content: "Create";
+    }
+    60% {
+        content: "Paint";
+    }
+    80% {
+        content: "Experiment";
+    }
+    100% {
+        content: "learn and grow";
+    }
+}
+
+
+/* introduction animation ends */
+
+
+/* about section */
+
+#about {
+    display: flex;
+    margin: 1vh auto 10vh;
+}
+
+.about-box {
+    width: 60vw;
+    height: 50vh;
+    margin: 8% auto;
+    padding: 5%;
+    margin-right: 4%;
+    box-sizing: border-box;
+    border-top: 1px solid indigo;
+}
+
+.about-box-img {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    opacity: 0.8;
+}
+
+.about-heading,
+.about-para {
+    text-align: left;
+    margin: 1%;
+    line-height: 1.5;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.about-heading {
+    font-size: 5vw;
+    color: indigo;
+    font-weight: 500;
+}
+
+
+/* contact section */
+
+#contact {
+    margin-top: 10%;
+    padding-top: 10vh;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.contact-box {
+    line-height: 2;
+}
+
+.contact-heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5em;
+}
+
+
+/* contact animation */
+
+#contact-lines::after {
+    content: "";
+    animation: line-animate 10s ease-out 1s infinite;
+}
+
+#contact-lines {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.534);
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes line-animate {
+    0% {
+        content: "Wanna drop a message to me ?";
+    }
+    5% {
+        content: ".";
+    }
+    10% {
+        content: ". .";
+    }
+    15% {
+        content: ". . .";
+    }
+    20% {
+        content: "I am willing to work as ";
+    }
+    30% {
+        content: "Frontend Web developer";
+    }
+    40% {
+        content: "Software developer";
+    }
+    50% {
+        content: "Tutor";
+    }
+    60% {
+        content: ". ";
+    }
+    65% {
+        content: ".";
+    }
+    70% {
+        content: ". . .";
+    }
+    80% {
+        content: "Anything I can do for you ?";
+    }
+    90% {
+        content: ".";
+    }
+    100% {
+        content: ". .";
+    }
+}
+
+.btn {
+    margin: 1% auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.234);
+    height: 20vh;
+    padding: 3vw;
+    margin-top: 3%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* skill section */
+
+#skill-section {
+    background-color: springgreen;
+    width: 100vw;
+    margin-top: 10%;
+    padding-top: 2%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.skill-heading {
+    font-size: 3rem;
+    font-family: 'Montserrat';
+}
+
+.skill-row {
+    margin: 2%;
+    height: 20%;
+    /* box-sizing: border-box; */
+}
+
+.skill-box {
+    width: 11%;
+    height: 15%;
+    display: inline-table;
+    margin: 5% 1%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgb(58, 58, 58);
+}
+
+.skill-box:hover {
+    width: 12%;
+    height: 16%;
+    display: inline-table;
+    margin: 4% 1%;
+    padding: 2.5%;
+    box-sizing: border-box;
+    /* background-color: rgb(245, 197, 125); */
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px rgb(58, 58, 58);
+    filter: invert(100);
+}
+
+.skill {
+    width: 100%;
+    height: 100%;
+    margin: 1.5%;
+    box-sizing: border-box;
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+}
+
+#skillname {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#credits,
+#attributions {
+    padding: 5px;
+    text-align: center;
+}
+
+#attributions {
+    padding: 10px;
+    display: none;
+    font-size: 1rem;
+}
+
+
+/* using media queries */
+
+@media only screen and ( max-width:460px) {
+    #title {
+        margin-bottom: 28vh;
+    }
+    .intro-heading {
+        font-weight: 500;
+        font-size: 8vw;
+        margin-bottom: 10px;
+    }
+    #about {
+        display: block;
+        padding: 1%;
+        margin: 1vh auto 22vh;
+    }
+    .about-heading {
+        font-weight: bold;
+        font-size: 7vw;
+    }
+    .about-para {
+        font-size: 5vw;
+    }
+    .about-box {
+        width: 100%;
+    }
+    .about-box-img {
+        position: absolute;
+        top: 70%;
+        width: 100vw;
+        opacity: 0.4;
+    }
+    #skill-section {
+        padding-bottom: 10vh;
+    }
+    .skill-heading {
+        font-size: 2em;
+    }
+    #contact {
+        padding: 3%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-box {
+        width: 100%;
+    }
+    .about-para {
+        font-size: 15px;
+        margin-bottom: 30vh;
+    }
+    .about-box-img {
+        position: absolute;
+        top: 70%;
+        width: 100vw;
+        opacity: 0.4;
+    }
+    #skill-section {
+        margin-top: 10vh;
+    }
+    #contact {
+        padding: 1%;
+        padding-top: 15vh;
+    }
+}
